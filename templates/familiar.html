@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Familiares</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        {% for familiar in familiares  %}
+                <p><h2>Los datos de mi {{familiar.parentesco}} es: </h2>
+                Nombre: <b>{{familiar.nombre}}</b>
+                <br>
+                Apellido: <b>{{familiar.apellido}}</b>
+                <br>
+                Edad: <b>{{familiar.edad}} años</b>
+                <br>
+                Fecha de Nacimiento: <b>{{familiar.fecha_nacimiento}}</b>
+                </p>
+        {% endfor %}
+
+        <script src="" async defer></script>
+    </body>
+</html>
